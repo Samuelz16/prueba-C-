@@ -1,0 +1,77 @@
+# Listado de Etiquetas HTML y su Sintaxis
+
+## **Estructura semántica**
+
+| **Etiqueta**   | **Sintaxis** |
+|---------------|-------------------------------------|
+| `<header>`    | `<header>Contenido del encabezado</header>` |
+| `<nav>`       | `<nav><ul><li><a href="#">Enlace</a></li></ul></nav>` |
+| `<div>`       | `<div>Contenido agrupado</div>` |
+| `<section>`   | `<section><h2>Título</h2><p>Texto</p></section>` |
+| `<footer>`    | `<footer>Contenido del pie de página</footer>` |
+
+## **Etiquetas de contenido**
+
+| **Etiqueta**   | **Sintaxis** |
+|---------------|-------------------------------------|
+| `<h1> - <h6>` | `<h1>Título principal</h1>` |
+| `<article>`   | `<article><h2>Título</h2><p>Texto</p></article>` |
+| `<p>`         | `<p>Este es un párrafo.</p>` |
+| `<ul>`        | `<ul><li>Elemento 1</li><li>Elemento 2</li></ul>` |
+| `<ol>`        | `<ol><li>Elemento 1</li><li>Elemento 2</li></ol>` |
+| `<li>`        | `<li>Elemento de la lista</li>` |
+| `<a>`         | `<a href="https://ejemplo.com">Enlace</a>` |
+
+## **Tablas**
+
+| **Etiqueta**   | **Sintaxis** |
+|---------------|-------------------------------------|
+| `<table>`     | `<table border="1">Contenido de la tabla</table>` |
+| `<tr>`        | `<tr><td>Dato 1</td><td>Dato 2</td></tr>` |
+| `<td>`        | `<td>Celda de la tabla</td>` |
+| `<th>`        | `<th>Encabezado de tabla</th>` |
+| `<thead>`     | `<thead><tr><th>Columna 1</th></tr></thead>` |
+| `<tbody>`     | `<tbody><tr><td>Dato</td></tr></tbody>` |
+
+## **Atributos de tabla**
+
+| **Atributo**   | **Ejemplo** |
+|---------------|-------------------------------------|
+| `border`      | `<table border="1">` |
+| `colspan`     | `<td colspan="2">Une dos columnas</td>` |
+| `rowspan`     | `<td rowspan="2">Une dos filas</td>` |
+
+## **Multimedia**
+
+| **Etiqueta**   | **Sintaxis** |
+|---------------|-------------------------------------|
+| `<img>`       | `<img src="imagen.jpg" alt="Descripción">` |
+| `<video>`     | `<video controls><source src="video.mp4" type="video/mp4"></video>` |
+| `<audio>`     | `<audio controls><source src="audio.mp3" type="audio/mpeg"></audio>` |
+| `<iframe>`    | `<iframe src="https://www.ejemplo.com" width="600" height="400"></iframe>` |
+
+## **Formularios**
+
+| **Etiqueta**   | **Sintaxis** |
+|---------------|-------------------------------------|
+| `<form>`      | `<form action="procesar.php" method="post">Contenido</form>` |
+| `<input>`     | `<input type="text" name="usuario" placeholder="Escribe tu nombre">` |
+| `<label>`     | `<label for="usuario">Nombre:</label>` |
+| `<button>`    | `<button type="submit">Enviar</button>` |
+| `<select>`    | `<select name="opciones"><option value="1">Opción 1</option></select>` |
+| `<textarea>`  | `<textarea name="comentario" rows="4" cols="50">Escribe aquí...</textarea>` |
+
+## **Atributos de formularios**
+
+| **Atributo**   | **Ejemplo** |
+|---------------|-------------------------------------|
+| `type`        | `<input type="email">` |
+| `name`        | `<input name="correo">` |
+| `value`       | `<input type="text" value="Texto predeterminado">` |
+| `placeholder` | `<input type="text" placeholder="Ingresa tu nombre">` |
+| `required`    | `<input type="text" required>` |
+| `min` / `max` | `<input type="number" min="1" max="10">` |
+| `maxlength`   | `<input type="text" maxlength="20">` |
+| `checked`     | `<input type="checkbox" checked>` |
+| `disabled`    | `<input type="text" disabled>` |
+| `readonly`    | `<input type="text" readonly>` |

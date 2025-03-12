@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas Favoritas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #ff3333;
+        }
+        ol {
+            font-size: medium;
+            color: rgb(230, 7, 7);
+        }
+        img {
+            display: block;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+        button {
+            background-color: #ff3333;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #e60000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>Buenas Tardes</h1>
+        <h2>Comidas Favoritas</h2>
+        <h3>Lista de Comidas</h3>
+        <ol>
+            <li>Pizza</li>
+            <li>Carne</li>
+            <li>Hamburguesa</li>
+        </ol>
+    </div>
+
+    <table border="1">
+        <tr>
+            <td>
+                <ol>
+                    <li>Carne</li>
+                    <li>Arroz</li>
+                    <li>Ensalada</li>
+                    <li>
+                        <img src="carne arroz y ensalada.jfif" alt="Carne, arroz y ensalada" width="150" height="100">
+                    </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                    <li>Hamburguesa</li>
+                    <li>Papas fritas</li>
+                    <li>Gaseosa</li>
+                    <li>
+                        <img src="hambur.jfif" alt="Hamburguesa" width="150" height="100">
+                    </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                    <li>Pizza</li>
+                    <li>Ajo y pimienta</li>
+                    <li>Gaseosa</li>
+                    <li>
+                        <img src="descarga (1).jfif" alt="Pizza" width="150" height="100">
+                    </li>
+                </ol>
+            </td>
+            <td>
+                <a href="2.html" target="_blank">Otras comidas</a>
+            </td>
+        </tr>
+    </table>
+
+    <h1>Formulario de Registro</h1>
+
+    <!-- Formulario de registro -->
+    <form action="script" method="post">
+        <!-- Campo de texto -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+        <!-- Campo de correo -->
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="ejemplo@email.com 
+    
+        "password">Contraseña:</label>
+        <input type="password" id="password" name="password" minlength="6" required>
+
+        <!-- Campo numérico con min y max -->
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="15" max="100" required>
+
+        <!-- Selección de género -->
+        <label for="preferencia">Preferencia:</label>
+        <select id="preferencia" name="preferencia" required>
+            <option value="">Seleccione...</option>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <!-- Área de texto -->
+        <label for="comentarios">¿Cuál es tu comida favorita?</label>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Escribe un mensaje"></textarea>
+
+        <!-- Checkbox -->
+        <input type="checkbox" id="terminos" name="terminos" required>
+        <label for="terminos">Acepto los términos y condiciones</label>
+
+        <!-- Rango -->
+        <label for="satisfaccion">Satisfacción de la encuesta (1-10):</label>
+        <input type="range" id="satisfaccion" name="satisfaccion" min="1" max="10" value="5">
+
+        <!-- Botón de envío -->
+        <button type="submit">Registrarse</button>
+    </form>
+
+    <footer>
+        <p></p>
+    </footer>
+
+</body>
+
+</html>
